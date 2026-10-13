@@ -5,9 +5,6 @@
 Jidi/
 node_modules/
 **/target/
-.env
-.env.*
-!.env.example
 .neon
 *.log
 DOCKER.md
