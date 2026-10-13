@@ -1,0 +1,10 @@
+services:
+  penalizador:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: penalizador:local
+    restart: unless-stopped
+    environment:
+      DISCORD_TOKEN: ${DISCORD_TOKEN:?DISCORD_TOKEN is required}
+      DATABASE_URL: ${DATABASE_URL:?DATABASE_URL is required}
